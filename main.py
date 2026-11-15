@@ -1,7 +1,4 @@
-
-# =================================
 # MENU DE RECEITAS
-# =================================
 
 def menu_receitas():
 
@@ -19,10 +16,7 @@ def menu_receitas():
         if opcao == "0":
             break
 
-
-# =================================
 # MENU DE DESPESAS
-# =================================
 
 def menu_despesas():
 
@@ -41,9 +35,7 @@ def menu_despesas():
             break
 
 
-# =================================
 # MENU DE TRANSAÇÕES
-# =================================
 
 def menu_transacoes():
 
@@ -61,9 +53,7 @@ def menu_transacoes():
             break
 
 
-# =================================
 # MENU PRINCIPAL
-# =================================
 
 def menu_principal():
 
