@@ -1,3 +1,31 @@
+# MENU PRINCIPAL
+
+def menu_principal():
+
+    while True:
+
+        print("\n===== SISTEMA FINANCEIRO =====")
+        print("1 - Receitas")
+        print("2 - Despesas")
+        print("3 - Transações")
+        print("0 - Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        match opcao:
+            case '1':
+                menu_receitas()
+            case '2':
+                menu_despesas()
+            case '3':
+                menu_transacoes()
+            case '0':
+                print("Programa encerrado!")
+                break
+            case _:
+                print("Opção invalida! digite um número de 0 a 3.")
+        input('Precione "ENTER" para continuar.')
+
 # MENU DE RECEITAS
 
 def menu_receitas():
@@ -13,8 +41,21 @@ def menu_receitas():
 
         opcao = input("Escolha uma opção: ")
 
-        if opcao == "0":
-            break
+        match opcao:
+            case '1':
+                pass
+            case '2':
+                pass
+            case '3':
+                pass
+            case '4':
+                pass
+            case '0':
+                pass
+            case _:
+                 print("Opção invalida! digite um número de 0 a 4.")
+        input('Precione "ENTER" para continuar.')
+
 
 # MENU DE DESPESAS
 
@@ -31,8 +72,21 @@ def menu_despesas():
 
         opcao = input("Escolha uma opção: ")
 
-        if opcao == "0":
-            break
+        match opcao:
+                case '1':
+                    pass
+                case '2':
+                    pass
+                case '3':
+                    pass
+                case '4':
+                    pass
+                case '0':
+                    pass
+                case _:
+                     print("Opção invalida! digite um número de 0 a 4.")
+        input('Precione "ENTER" para continuar.')
+        
 
 
 # MENU DE TRANSAÇÕES
@@ -49,39 +103,20 @@ def menu_transacoes():
 
         opcao = input("Escolha uma opção: ")
 
-        if opcao == "0":
-            break
+        match opcao:
+                case '1':
+                    pass
+                case '2':
+                    pass
+                case '3':
+                    pass
+                case '4':
+                    pass
+                case '0':
+                    pass
+                case _:
+                    print("Opção invalida! digite um número de 0 a 4.")
+                    
+        input('Precione "ENTER" para continuar.')
 
 
-# MENU PRINCIPAL
-
-def menu_principal():
-
-    while True:
-
-        print("\n===== SISTEMA FINANCEIRO =====")
-        print("1 - Receitas")
-        print("2 - Despesas")
-        print("3 - Transações")
-        print("0 - Sair")
-
-        opcao = input("Escolha uma opção: ")
-
-        if opcao == "1":
-            menu_receitas()
-
-        elif opcao == "2":
-            menu_despesas()
-
-        elif opcao == "3":
-            menu_transacoes()
-
-        elif opcao == "0":
-            print("Encerrando...")
-            break
-
-        else:
-            print("Opção inválida!")
-
-
-menu_principal()
