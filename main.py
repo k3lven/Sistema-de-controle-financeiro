@@ -118,5 +118,3 @@ def menu_transacoes():
                     print("Opção invalida! digite um número de 0 a 4.")
                     
         input('Precione "ENTER" para continuar.')
-
-
