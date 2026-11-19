@@ -1,4 +1,5 @@
 # MENU PRINCIPAL
+from funcoes.receitas import *
 
 def menu_principal():
 
@@ -23,8 +24,8 @@ def menu_principal():
                 print("Programa encerrado!")
                 break
             case _:
-                print("Opção invalida! digite um número de 0 a 3.")
-        input('Precione "ENTER" para continuar.')
+                print("Opção inválida! Digite um número de 0 a 3.")
+        input('Pressione "ENTER" para continuar.')
 
 # MENU DE RECEITAS
 
@@ -43,18 +44,19 @@ def menu_receitas():
 
         match opcao:
             case '1':
-                pass
+                criar_tabela_receitas()
+                cadastrar_receita()
             case '2':
-                pass
+                listar_receitas()
             case '3':
-                pass
+                atualizar_receita()
             case '4':
-                pass
+                excluir_receita()
             case '0':
-                pass
+                break 
             case _:
-                 print("Opção invalida! digite um número de 0 a 4.")
-        input('Precione "ENTER" para continuar.')
+                 print("Opção inválida! Digite um número de 0 a 4.")
+        input('Pressione "ENTER" para continuar.')
 
 
 # MENU DE DESPESAS
@@ -73,19 +75,19 @@ def menu_despesas():
         opcao = input("Escolha uma opção: ")
 
         match opcao:
-                case '1':
-                    pass
-                case '2':
-                    pass
-                case '3':
-                    pass
-                case '4':
-                    pass
-                case '0':
-                    pass
-                case _:
-                     print("Opção invalida! digite um número de 0 a 4.")
-        input('Precione "ENTER" para continuar.')
+            case '1':
+                pass
+            case '2':
+                pass
+            case '3':
+                pass
+            case '4':
+                pass
+            case '0':
+                break
+            case _:
+                 print("Opção inválida! Digite um número de 0 a 4.")
+        input('Pressione "ENTER" para continuar.')
         
 
 
@@ -104,19 +106,18 @@ def menu_transacoes():
         opcao = input("Escolha uma opção: ")
 
         match opcao:
-                case '1':
-                    pass
-                case '2':
-                    pass
-                case '3':
-                    pass
-                case '4':
-                    pass
-                case '0':
-                    pass
-                case _:
-                    print("Opção invalida! digite um número de 0 a 4.")
+            case '1':
+                pass
+            case '2':
+                pass
+            case '3':
+                pass
+            case '0':
+                break
+            case _:
+                print("Opção inválida! Digite um número de 0 a 3.") # Ajustado para 0 a 3
                     
-        input('Precione "ENTER" para continuar.')
+        input('Pressione "ENTER" para continuar.')
 
-
+if __name__ == "__main__":
+    menu_principal()
